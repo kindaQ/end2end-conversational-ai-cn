@@ -47,7 +47,7 @@ def setup_train_args():
     parser.add_argument('--log_step', default=1, type=int, required=False, help='多少步汇报一次loss')
     parser.add_argument('--gradient_accumulation', default=1, type=int, required=False, help='梯度积累')
     parser.add_argument('--max_grad_norm', default=1.0, type=float, required=False)
-    parser.add_argument('--dialogue_model_output_path', default='dialogue_model/', type=str, required=False,
+    parser.add_argument('--dialogue_model_output_path', default='dialogue_model_path/', type=str, required=False,
                         help='对话模型输出路径')
     parser.add_argument('--pretrained_model', default='', type=str, required=False, help='预训练的GPT2模型的路径')
     parser.add_argument('--writer_dir', default='tensorboard_summary/', type=str, required=False, help='Tensorboard路径')
